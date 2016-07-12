@@ -1,0 +1,57 @@
+1. var i = 3;
+
+while (i) {
+  alert( i-- );
+} - код будет уменьшаться на 1 и будет работать пока значение I не будет равно 0 ( 3 - 1, 2 - 1, 1 - 1)
+
+2. Префиксный вариант
+	var i = 0;
+	while (++i < 5) alert(i); 
+	while (1 < 5) alert(1);
+ 	while (2 < 5) alert(2);
+	while (3 < 5) alert(3);
+	while (4 < 5) alert(4);
+Постфиксный вариант
+	var i = 0;
+	while (i++ < 5) alert(i);
+	while (0 < 5) alert(0);
+while (1 < 5) alert(1);
+ 	while (2 < 5) alert(2);
+	while (3 < 5) alert(3);
+	while (4 < 5) alert(4);
+
+
+3. Постфиксная форма:
+	for (var i = 0; i < 5; i++) alert(i);
+	0, 1, 2, 3, 4.
+Префиксная форма:
+	for (var i = 0; i < 5; ++i) alert(i);
+	0, 1, 2, 3, 4.
+
+4. При помощи цикла for выведите чётные числа от 2 до 10.
+	for (var i = 2; i <= 10; i++) {
+  		if (i % 2 == 0) {
+    			alert( i );
+  		}
+			}
+6. var a = +prompt('a?', '');
+
+switch (a) {
+	case 0:
+	alert ("0");
+	break;
+	case 1:
+	alert ("1");
+	break;
+	case 2:
+	case 3:
+	alert ("2, 3");
+	break;
+	default:
+	alert("Enter another key")
+}
+7. var age = prompt("How old are you?", "");
+	if (age > 18 ? true : false) {alert ("Your age > 18")}
+
+var age = prompt("How old are you?", "")
+if (age > 18 || age < 18) {alert("Your age > 18")}
